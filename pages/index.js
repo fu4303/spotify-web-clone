@@ -9,7 +9,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main style={{ backgroundColor: "black", height: "100vh" }}>
+      <main>
         <Login />
       </main>
     </div>

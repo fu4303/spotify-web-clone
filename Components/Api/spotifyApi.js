@@ -2,7 +2,7 @@ export const authEndpoint = "https://accounts.spotify.com/authorize";
 
 const clientId = "60aab7ad549d4c0d8a4f12da1fbe6fdd";
 
-const redirectUrl = "http://localhost:3000/";
+const redirectUrl = "http://localhost:3000/main";
 
 const scopes = [
   "user-read-recently-played", //Read access to a user’s recently played tracks.
