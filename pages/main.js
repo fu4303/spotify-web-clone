@@ -1,12 +1,12 @@
 import MainPage from "../Components/MainPage/MainPage";
-import StateProvider from '../Components/StateProvider'
+import StateContextProvider from "../Components/StateContext";
 
 export default function main() {
   return (
     <div>
-      <StateProvider reducer initialState>
+      <StateContextProvider>
         <MainPage />
-      </StateProvider>
+      </StateContextProvider>
     </div>
   );
 }
