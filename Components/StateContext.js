@@ -8,7 +8,9 @@ const spotify = new SpotifyWebApi();
 
 const StateContextProvider = (props) => {
   const [user, setUser] = useState("");
-  const [token, setToken] = useState("");
+  const [token, setToken] = useState(
+    "BQAk431737rzxmVSbgiKI_zChNB4FMiEqmFSjHlbCO_o2HAQm7nMv0R_gO6Q125Dno5peq68EPYubEfY6URrKe_llR3Gwn46VEyaJsxzIVXB_T_erO4fXYVBM844LcbVwhZdWne8ngoGreSpdxNJBjV59tbRJZkRtqkVKKGaecDjj7HCrepRDwEKZLoB"
+  );
 
   useEffect(() => {
     const hash = accessToken();
@@ -27,11 +29,9 @@ const StateContextProvider = (props) => {
     }
   }, []);
 
-  // console.log(token);
-  // console.log(user);
 
   return (
-    <StateContext.Provider value={{ user, token }}>
+    <StateContext.Provider value={{ user, token, spotify}}>
       {props.children}
     </StateContext.Provider>
   );

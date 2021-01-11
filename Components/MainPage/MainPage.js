@@ -1,55 +1,22 @@
-import { useState, useEffect, useContext } from "react";
-import { accessToken } from "../Api/spotifyApi";
+import { useContext } from "react";
 import Login from "../Login/Login";
-import SpotifyWebApi from "spotify-web-api-js";
 import Player from "../Player/Player";
 import { StateContext } from "../StateContext";
 
-//const spotify = new SpotifyWebApi();
-
-// function Redirect({ to }) {
-//   const router = useRouter();
-
-//   useEffect(() => {
-//     router.push(to);
-//   }, []);
-
-//   return null;
-// }
-
 export default function main() {
-  // const [token, setToken] = useState("");
+  const { user, token, spotify } = useContext(StateContext);
 
-  const { token } = useContext(StateContext);
-
-  console.log(token);
-
-  // useEffect(() => {
-  //   const hash = accessToken();
-  //   window.location.hash = "";
-
-  //   const _token = hash.access_token;
-
-  //   if (_token) {
-  //     setToken(_token);
-
-  //     spotify.setAccessToken(_token);
-
-  //     spotify.getMe().then((user) => {
-  //       console.log(user);
-  //     });
-  //   }
-  // }, []);
+  console.log(spotify);
 
   return (
     <div>
-      {/*token ? (
+      {token ? (
         <Player />
       ) : (
         <>
           <Login />
         </>
-      )*/}
+      )}
     </div>
   );
 }

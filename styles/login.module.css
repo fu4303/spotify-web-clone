@@ -1,0 +1,31 @@
+/* LOGIN PAGE */
+
+.logo {
+  margin-top: 20vh;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  height: 100vh;
+}
+
+.login__a {
+  color: white;
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  background-color: #1db954;
+  margin-top: 5rem;
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+
+.login__a:hover {
+  background-color: #179342;
+}

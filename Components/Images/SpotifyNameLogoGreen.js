@@ -1,6 +1,8 @@
+import styles from "../../styles/login.module.css";
+
 const SpotifyNameLogoGreen = () => {
   return (
-    <div className="logo">
+    <div className={styles.logo}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="200px"
