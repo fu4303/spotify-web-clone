@@ -8,9 +8,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "autoprefixer": "^10.2.1",
     "next": "10.0.4",
+    "postcss": "^8.2.4",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "spotify-web-api-js": "^1.5.1"
+    "spotify-web-api-js": "^1.5.1",
+    "tailwindcss": "^2.0.2"
   }
 }

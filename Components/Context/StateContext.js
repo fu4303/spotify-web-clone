@@ -1,5 +1,5 @@
 import { useState, createContext, useEffect } from "react";
-import { accessToken } from "./Api/spotifyApi";
+import { accessToken } from "../Api/spotifyApi";
 import SpotifyWebApi from "spotify-web-api-js";
 
 export const StateContext = createContext();
