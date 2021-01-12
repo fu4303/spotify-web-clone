@@ -4,9 +4,7 @@ import PlayerHome from "../PlayerHome/Player";
 import { StateContext } from "../Context/StateContext";
 
 export default function main() {
-  const { user, token, spotify } = useContext(StateContext);
-
-  console.log(spotify);
+  const { token } = useContext(StateContext);
 
   return (
     <div>
