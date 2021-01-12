@@ -4,7 +4,12 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      body: ["Montserrat","-apple-system", "BlinkMacSystemFont", "sans-serif"],
+      "sans": [
+        "CircularStd",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "sans-serif",
+      ],
     },
     minWidth: {
       15: "15%",

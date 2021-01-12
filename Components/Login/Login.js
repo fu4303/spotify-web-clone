@@ -8,7 +8,7 @@ export default function Login() {
       <div className="mt-20"></div>
       <SpotifyNameLogoGreen height={200} width={400} />
       <a aria-label="login button" className={styles.login__a} href={loginUrl}>
-        LOG IN WITH SPOTIFY
+        LOG IN TO SPOTIFY
       </a>
     </div>
   );
