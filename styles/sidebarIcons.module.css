@@ -9,13 +9,10 @@
 }
 
 .scroll {
-  height: 19rem;
+  height: 22rem;
   overflow-y: auto;
 }
 
-/* .scroll::-webkit-scrollbar {
-  display: none;
-} */
 
 /* width */
 .scroll::-webkit-scrollbar {

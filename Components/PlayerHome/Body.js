@@ -1,6 +1,6 @@
 const Body = () => {
   return (
-    <div class="h-screen flex-1 bg-body text-white">
+    <div className="h-screen sm:min-w-75 lg:min-w-80 flex-1 bg-body text-white">
       your playlist
       <br />
       recently played

@@ -3,9 +3,14 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
+    fontFamily: {
+      body: ["Montserrat","-apple-system", "BlinkMacSystemFont", "sans-serif"],
+    },
     minWidth: {
       15: "15%",
-      25: "25%",
+      20: "20%",
+      75: "75%",
+      80: "80%",
     },
     backgroundColor: (theme) => ({
       ...theme("colors"),

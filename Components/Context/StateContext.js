@@ -8,7 +8,9 @@ const spotify = new SpotifyWebApi();
 
 const StateContextProvider = (props) => {
   const [user, setUser] = useState("");
-  const [token, setToken] = useState("");
+  const [token, setToken] = useState(
+    "BQAk431737rzxmVSbgiKI_zChNB4FMiEqmFSjHlbCO_o2HAQm7nMv0R_gO6Q125Dno5peq68EPYubEfY6URrKe_llR3Gwn46VEyaJsxzIVXB_T_erO4fXYVBM844LcbVwhZdWne8ngoGreSpdxNJBjV59tbRJZkRtqkVKKGaecDjj7HCrepRDwEKZLoB"
+  );
   const [playlist, setPlaylist] = useState(null);
 
   useEffect(() => {
@@ -27,7 +29,7 @@ const StateContextProvider = (props) => {
       });
 
       spotify.getUserPlaylists().then((playlist) => {
-        setPlaylist(playlist.items);
+        setPlaylist(playlist);
       });
     }
   }, []);

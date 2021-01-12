@@ -16,7 +16,7 @@ const Sidebar = () => {
   console.log(playlist);
 
   return (
-    <div className="h-5/6 flex-none lg:min-w-15 sm:min-w-25 bg-black pl-3 pr-3">
+    <div className="h-screen bg-black pl-3 pr-3  ">
       <div className="flex justify-center cursor-pointer my-2">
         <SpotifyLogo height={80} width={150} />
       </div>
@@ -28,12 +28,19 @@ const Sidebar = () => {
       <hr className="m-1 border-1 border-sidebarLine" />
 
       <div className={styles.scroll}>
-        {playlist.map((p) => (
-          <SidebarOption value={p.name} key={p.name} />
-        ))}
+        {playlist === null || undefined ? (
+          <div></div>
+        ) : (
+          playlist?.items?.map((p) => (
+            <SidebarOption value={p.name} key={p.name} />
+          ))
+        )}
       </div>
     </div>
   );
 };
 
 export default Sidebar;
+
+
+// flex-none lg:min-w-15 sm:min-w-15 lg:max-w-20 lg:flex-0 xl:flex-0
